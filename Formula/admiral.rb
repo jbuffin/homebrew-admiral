@@ -1,19 +1,16 @@
 class Admiral < Formula
   desc "Visual dashboard that launches coding-agent sessions and lets you watch them"
   homepage "https://github.com/jbuffin/admiral"
-  url "https://github.com/jbuffin/admiral/releases/download/v0.8.0/admiral-0.8.0-darwin-arm64.tar.gz"
-  sha256 "46144db6984c3716ac0ec1a19a41cc0a41a43b75115f970fabe5d3fc05529d85"
+  url "https://github.com/jbuffin/admiral/releases/download/v1.0.0/admiral-1.0.0-darwin-arm64.tar.gz"
+  sha256 "9d20b4adb8ce7f22f8d22739060c3555c10c99ed7a92ee98c5ce1d1f65f765f7"
   license "MIT"
 
   depends_on arch: :arm64
   depends_on :macos
-  depends_on "python@3.15"
   depends_on "tmux"
 
   def install
     bin.install "admiral"
-    (pkgshare/"plugins").install "plugins/freeform"
-    (pkgshare/"plugins").install "plugins/github"
     prefix.install "LICENSE", "THIRD_PARTY_NOTICES"
   end
 
