@@ -1,8 +1,8 @@
 class Admiral < Formula
   desc "Visual dashboard that launches coding-agent sessions and lets you watch them"
   homepage "https://github.com/jbuffin/admiral"
-  url "https://github.com/jbuffin/admiral/releases/download/v1.2.4/admiral-1.2.4-darwin-arm64.tar.gz"
-  sha256 "6a9dd88c7e4df1ec37e2ebd6b8658345fd8f61e3f7af51609b41283cff39e5b2"
+  url "https://github.com/jbuffin/admiral/releases/download/v1.2.5/admiral-1.2.5-darwin-arm64.tar.gz"
+  sha256 "63368fa7583a41477ab4e7f20020427a9bf31596a02cc81e33f3a0a098ff6630"
   license "MIT"
 
   depends_on arch: :arm64
